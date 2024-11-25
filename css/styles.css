@@ -1,38 +1,51 @@
-body {
-    font-family: "Roboto", sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
 /*Header*/
 .site-header {
     background: #fff;
     border-bottom: #364aba;
-    width: 1440px;
+    width: 100%;
     height: 72px;
     color: #2e2f42;
     padding: 20px 10px;
     display: flex;
-    justify-content:space-between;
+    line-height: 1.5;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+    font-weight: 700;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo-header-black {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+}
+
 /* Advantages Section */
 section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 section ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Відображення у 4 колонки */
-  gap: 20px;
-  padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Відображення у 4 колонки */
+    gap: 20px;
+    padding: 0;
 }
 
 .main-nav {
@@ -60,7 +73,7 @@ section ul {
 
 .contact-info ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     gap: 20px;
     margin: 0;
@@ -80,7 +93,7 @@ section ul {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 0px 0px 32px 0px;
     background: #2e2f42;
     color: #fff;
 }
@@ -92,21 +105,20 @@ section ul {
 }
 
 .btn-primary {
-    background: #4d5ae5;;
-    color: #fff;;
+    background: #4d5ae5;
+    color: #fff;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+    }
 
 .btn-primary:hover {
     background-color: #3b8ac6;
 }
 
-/* Портфоліо */
+/* Portfolio */
 .portfolio {
     padding: 40px 20px;
 }
@@ -149,6 +161,7 @@ section ul {
     padding: 30px 20px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .web {
     font-weight: 700;
     font-size: 18px;
@@ -168,14 +181,18 @@ section ul {
 }
 
 .site-footer .footer-logo {
-    font-size: 18px
-    font-weight: 700;
+    color: #364aba;
+    font-size: 18px font-weight: 700;
     margin-bottom: 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+}
+
+.logo-header-white {
+    color: #fff;
 }
 
 .site-footer .footer-text {
