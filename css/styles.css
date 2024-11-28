@@ -1,5 +1,6 @@
+/* Основные стили */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
 }
@@ -7,14 +8,28 @@ body {
 ul,
 ol {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    /* Добавлен фон для кнопок */
+    color: white;
+    font-size: 16px;
+}
+
+/* Стили для логотипа */
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -27,10 +42,22 @@ a {
     color: #2e2f42;
 }
 
-.footer-logo .logo-part {
-    color: #f4f4fd;
+/* Кнопка .btn-hero */
+.btn-hero {
+    background: #4d5ae5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
 }
 
+.btn-hero:hover {
+    background: #404bbf;
+    /* Добавлен эффект на hover */
+}
+
+/* Навигационные ссылки */
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -39,6 +66,14 @@ a {
     color: #2e2f42;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+/* Стили для контактов */
 .contacts {
     font-style: normal;
 }
@@ -50,9 +85,33 @@ a {
     color: #434455;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-    color: #404bbf;
+/* Стили футера */
+.footer {
+    background-color: #2e2f42;
+    padding: 20px 0;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.footer-logo .logo-part {
+    color: #1111ed;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Обновление стилей для hero секции */
+.hero {
+    background: #2e2f42;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
 }
